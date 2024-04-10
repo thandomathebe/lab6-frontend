@@ -48,6 +48,6 @@ app.post('/cars', (req, res) => {
 });
 
 //start app at localhost:3001
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log('Server started at http://localhost:3000');
 });
