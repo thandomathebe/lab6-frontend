@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 });
+
 function addCar(newCar) {
     fetch('https://lab6-backend.azurewebsites.net/cars', {
         method: 'POST',
@@ -74,6 +75,7 @@ function removeCar(index) {
             console.error('Error:', error);
         });
 }
+
 // Event delegation for remove buttons
 carList.addEventListener('click', event => {
     if (event.target.classList.contains('btn-remove')) {
